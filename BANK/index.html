@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <title> 
+            Home Page
+        </title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body onload="clearPreviousDivs()">
+        <header id="h">
+            <b>Account Management System</b>
+        </header>
+        <div class="mainContainer">
+            <div class="leftContainer">
+                <button id="ca" onclick="createAcount()">Create Account</button>
+                <button id="dea" onclick="deleteAccount()">Delete Account</button>
+                <button id="ua" onclick="updateAccount()">Update Account</button>
+                <button id="da" onclick="displayAccount()">Get Single Account Details</button>
+                <button id="depa" onclick="depositAmount()">Deposit Amount</button>
+                <button id="wi" onclick="withDraw()">Withdraw Amount</button>
+                <button id="tf" onclick="transferFunds()">Transfer Funds</button>
+            </div>
+            <div class="rightContainer">
+                <div class="childComp" id="createAccount">
+                    <table align="center">
+                        <form id="create">
+                            <tr>
+                                <td>Customer Name</td><td>
+                                    <input type="text" name="cname"></td>
+                            </tr>    
+                            <tr>
+                                <td>Contact Number</td>
+                                <td><input type="text" name="contact"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>
+                                    <input type="radio" name="g">Female
+                                    <input type="radio" name="g">Male
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td><textarea rows="4" placeholder="Enter the Address"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td><input type="text" name="age"></td>
+                            </tr>
+                            <tr>
+                                <td>Email-Id</td>
+                                <td><input type="text" name="email"></td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td><input type="text" name="date" placeholder="dd/mm/yyyy"></td>
+                            </tr>
+                            <tr>
+                                <td>Account Type</td>
+                                <td>
+                                    <select name="account" id="acc">
+                                        <option value="current">Current Account</option>
+                                        <option value="savings">Savings Account</option>
+                                    </select>
+                                </td>
+                            </tr>   
+                            <tr><td><br></td></tr> 
+                            <tr>
+                                <td><button type="submit" value="Submit" id="submit">Submit</button> </td>
+                                <td><button type="reset" value="Reset" id="reset">Reset</button></td>
+                            </tr> 
+                        </form>
+                    </table>
+                </div>
+                <div class="childComp" id="deleteAccount">
+                    <table align="center">
+                        <form id="create">
+                            <tr>
+                                <td><b>Enter Account Number to Delete</b></td>
+                            </tr>   
+                            <tr>
+                                <td>Account Number</td><td><input type="text" name="cname"></td>
+                            </tr>
+                            <tr><td><br></td></tr> 
+                            <tr>
+                                <td><button type="submit" value="Submit" id="submit">Submit</button> </td>
+                                <td><button type="reset" value="Reset" id="reset">Reset</button></td>
+                            </tr> 
+                        </form>
+                    </table>
+                </div>
+                <div class="childComp" id="updateAccount">
+                    <table align="center">
+                        <form id="create">
+                            <tr>
+                                <td><b>Enter Account Number to Update</b></td>
+                            </tr>   
+                            <tr>
+                                <td>Account Number</td><td><input type="text" name="cname"></td>
+                            </tr>
+                            <tr><td><br></td></tr> 
+                            <tr>
+                                <td><button type="submit" value="Submit" id="submit">Submit</button> </td>
+                                <td><button type="reset" value="Reset" id="reset">Reset</button></td>
+                            </tr> 
+                        </form>
+                    </table>
+                </div>
+                <div class="childComp" id="displayAccount">
+                    <table align="center">
+                        <form id="create">
+                            <tr>
+                                <td><b>Enter Account Number to Get Details</b></td>
+                            </tr>   
+                            <tr>
+                                <td>Account Number</td><td><input type="text" name="cname"></td>
+                            </tr>
+                            <tr><td><br></td></tr> 
+                            <tr>
+                                <td><button type="submit" value="Submit" id="submit">Submit</button> </td>
+                                <td><button type="reset" value="Reset" id="reset">Reset</button></td>
+                            </tr> 
+                        </form>
+                    </table>
+                </div>
+                <div class="childComp" id="depositAmount">
+                    <table align="center">
+                        <form id="create">
+                            <tr>
+                                <td>Account Number</td><td><input type="text" name="cname"></td>
+                            </tr>
+                            <tr>
+                                <td>Enter Amount To Deposit</td><td><input type="text" name="amt"></td>
+                            </tr>
+                            <tr><td><br></td></tr> 
+                            <tr>
+                                <td><button type="submit" value="Deposit" id="deposit">Deposit</button> </td>
+                                <td><button type="reset" value="Clear" id="clear">Clear</button></td>
+                            </tr> 
+                        </form>
+                    </table>
+                </div>
+                <div class="childComp" id="withDraw">
+                    <table align="center">
+                        <form id="create">
+                            <tr>
+                                <td>Enter Account Number</td><td><input type="text" name="cname"></td>
+                            </tr>
+                            <tr>
+                                <td>Enter Amount To WithDraw</td><td><input type="text" name="amt"></td>
+                            </tr>
+                            <tr><td><br></td></tr> 
+                            <tr>
+                                <td>
+                                    <button value="Withdraw">Withdrawl</button>
+                                </td>
+                            </tr> 
+                        </form>
+                    </table>
+                </div>
+                <div class="childComp" id="transferFunds">
+                    <table align="center">
+                        <form id="create">
+                            <tr>
+                                <td>From Account Number</td><td><input type="text" name="cname"></td>
+                            </tr>
+                            <tr>
+                                <td>To Account Number</td><td><input type="text" name="cname"></td>
+                            </tr>
+                            <tr>
+                                <td>Enter Amount To Transfer</td><td><input type="text" name="amt"></td>
+                            </tr>
+                            <tr><td><br></td></tr> 
+                            <tr>
+                                <td><button type="submit" value="Send">Send</button> </td>
+                                <td><button type="reset" value="Clear">Clear</button></td>
+                            </tr> 
+                        </form>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer id="f">
+        </footer>
+    </body>
+</html>

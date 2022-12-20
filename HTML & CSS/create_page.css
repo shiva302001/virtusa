@@ -1,0 +1,96 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo{
+  max-width: 100px;
+  max-height: 100px;
+}
+form{
+    text-align: left;
+    font-size: 20px;
+    margin: 1% auto;
+    width: 30%;
+    border: 2px black solid;
+    padding: 2%;
+    border-radius: 9px;
+    border-color: rgb(0,0,128);
+}
+input[type=text]{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+}
+
+input[type=password]:focus {
+    outline: none;
+}
+input[type=password]{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: grape;
+}
+.next{
+  color: white;
+}
+.fieldp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.google{
+  letter-spacing: -4px;
+  font-weight: normal;
+}
+.head1 {
+    font-weight: normal;
+}
+fieldset{
+    padding: 0% 5%;
+    padding-bottom: 2%;
+    border-radius: 7px;
+    border-color: lavender;
+}
+legend{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: grape;
+}
+
+.flex-contianer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% auto;
+  }
+  
+  .left-btn {
+    align-items: left;
+    width: 200px;
+    font-size: 20px;
+    color: blue;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+  }
+  
+  
+  .right-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-right: 1%;
+    background-color: rgb(39, 39, 154);
+    color: grape;
+    border: none;
+    border-radius: 7px;
+  }
+  .right-btn:hover{
+    background-color: darkblue;
+  }

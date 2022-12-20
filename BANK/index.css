@@ -1,0 +1,61 @@
+#h 
+{
+  background-color: peachpuff; 
+  font-size: 35px;
+  padding: 18px 0;
+  text-align: center;
+  border-style: groove;
+}
+#ca,#ua,#da,#dea,#depa,#wi,#tf
+{
+    cursor:pointer;
+    background-color:mediumpurple;
+    display: block;
+    padding: 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: black;
+}
+#create
+{
+    position: relative;
+    margin-left: 150px;
+}
+.mainContainer
+{
+    display:flex;
+}
+.leftContainer
+{
+    width: 20%;
+}
+.rightContainer{
+    padding-top: 125px;
+    padding-left: 150px;
+    margin-bottom:50px ;
+    width:50%;
+}
+#ca:hover,#ua:hover,#da:hover,#dea:hover,#depa:hover,#wi:hover,#tf:hover
+{
+    background-color: peachpuff;
+}
+#createAccount,#deleteAccount,#updateAccount,#displayAccount,#depositAmount,#withDraw,#transferFunds{
+    display: none;
+    
+}
+#submit,#reset,#Deposit,#Clear,#Send,#Withdrawl
+{
+    padding: 8px;
+    width:70px;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+#f
+{
+  background-color: peachpuff; 
+  border-style: groove;
+  margin-top: 50px;
+  padding: 35px 0;
+
+}
