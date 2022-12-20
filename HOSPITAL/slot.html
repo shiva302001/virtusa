@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/fd784ce3e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="superstyle.css">
+</head>
+
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .bookSlot{
+        margin: 5px;
+    }
+    .hsptlsNearu{
+        margin: 5px;
+    }
+    .poplrcts{
+        border: 1px solid rgb(229, 230, 228);
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px;
+        padding: 13px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .poplrcts p{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .poplrcts div p{
+        cursor: pointer;
+    }
+    .speciality p{
+        margin-top: 9px;
+        margin-bottom: 20px;
+    }
+
+    .hsptlsNearu p{
+        margin-top: 9px;
+        margin-bottom: 20px;
+    }
+
+    .he2{
+        color: rgb(0, 23, 83);
+        margin-bottom: 5px;
+    }
+
+    .btns{
+        display: inline-block;
+        margin:5px;
+        width:auto;
+        height:auto;
+        text-align: center;
+        font-size: small;
+    }
+
+    .bookSlot button{
+        box-shadow: 1px 2px 5px;
+        width:90px;
+        height:90px;
+        cursor: pointer;
+        margin-bottom: -10px;
+        background-color:rgb(115, 202, 202);
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .bookSlot button:hover{
+        background-color:rgb(41, 150, 150);
+        transform: scale(1.075);
+    }
+    button img:hover{
+        transform: scale(1.25);
+    }
+
+    .speciality form{
+        width:auto;
+        border-bottom: 1px solid black;
+    }
+    .spec{
+        width: 1390px;
+        border-style: none;
+        outline:none;
+        overflow: hidden;
+        border: 0px;
+    }
+    .hsptlsNearu select{
+        border-style: none;
+        outline: none;
+    }
+</style>
+
+<body>
+    <div class=heading>
+        <a href="index.html">
+        <p>Hospital Management System</p>
+        </a>
+    </div>
+    <div class=navbar>
+        <button onclick="" class="consult">
+            <a href="slot.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                <p class="text">BOOK</p>
+                <p class="text">SLOT</p>
+            </a>
+        </button>
+        <button onclick="" class="consult">
+            <a href="onlineconsult.html">
+                <i class="fa-solid fa-user-doctor"></i>
+                <p class="text">CONSULT ONLINE</p>
+            </a>
+        </button>
+        <button onclick="" class="consult">
+            <a href="">
+                <i class="fa-solid fa-circle-plus"></i>
+                <p class="text">&nbsp;&nbsp;BUY MEDICINE</p>
+            </a>
+        </button>
+        <button onclick="" class="consult">
+            <a href="labtest.html">
+                <i class="fa-solid fa-flask"></i>
+                <p class="text">BOOK LAB TEST</p>
+            </a>
+        </button>
+    </div>
+
+    <div class="bookSlot">
+        <h2 class="he2">01. Select Your City</h2>
+        <p>Private online condultations with verified doctors in all specialists.</p>
+
+        <div class="poplrcts">
+            <p style="font-weight: 600;"> Popular Cities </p>
+            <div class="btns">
+                <button>
+                    <img style="width:40px;" src="imgs\icons8-hyderabad-charminar-58.png" alt="">
+                </button>
+                <p>Hyderabad</p>
+            </div>
+            <div class="btns">
+                <button>
+                    <img src="imgs\icons8-mumbai-50.png" alt="">
+                </button>
+                <p>Mumbai</p>
+            </div>
+            <div class="btns">
+                <button>
+                    <img src="imgs\icons8-chennai-50.png" alt="">
+                </button>
+                <p>Chennai</p>
+            </div>
+            <div class="btns">
+                <button>
+                    <img src="imgs\icons8-kolkata-50.png" alt="">
+                </button>
+                <p>Kolkata</p>
+            </div>
+            <div class="btns">
+                <button>
+                    <img src="imgs\icons8-new-delhi-50.png" alt="">
+                </button>
+                <p>Delhi</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            <div class="btns defaultCity">
+                <button>
+                    <img src="imgs\icons8-city-buildings-48.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+
+            <div class="btns">
+                <button>
+                    <img src="imgs\icons8-more-50.png" alt="">
+                </button>
+                <p>Other Cities</p>
+            </div>
+            
+        </div>
+        <br>
+        <div class="speciality">
+            <h2 class="he2">02. Select Speciality</h2>
+            <p>Private online condultations with verified doctors in all specialists.</p>
+            <form action="">
+                <select name="special" class="spec">
+                    <option value="select">Select a Speciality</option>
+                    <option value="ortho">Ortho</option>
+                    <option value="physio">Physilogist</option>
+                    <option value="dental">Dentist</option>
+                    <option value="skin">Skin Expert</option>
+                </select>
+            </form>
+        </div>
+        <br>
+
+        <div class="hsptlsNearu">            
+            <h2 class="he2">03. Select the Hospital Hear You</h2>
+            <p>Select the near by hospital you would like to book the appointment.</p>
+
+            <form action="">
+                <select name="Hospitals" id="hos">
+                    <option value="default">Hospitals</option>
+                    <option value="kims">KIMS</option>
+                </select>
+                <br>
+                <br>
+                <select name="Clinics" id="cli">
+                    <option value="Clinics">Clinics</option>
+                    <option value="aSmallClinic">Any </option>
+                </select>
+                <br>
+                <input type="submit" placeholder="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

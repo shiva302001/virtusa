@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/fd784ce3e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="superstyle.css">
+</head>
+<style>
+    
+    .labtest{
+        position: relative;
+        background-color: rgb(109, 129, 184);
+        width:auto;
+        height:1500px;
+        text-align: center;
+    }
+    .middle{
+        position:relative;
+        padding: 15px;
+        width:365px;
+        top:150px;
+        left:225px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    .formitems{
+        width:275px;
+        margin: 5px;
+    }
+    .formitemssmall{
+        width:135px;
+        margin:0px;
+    }
+    .submit{
+        width:275px;
+        height: 35px;
+        padding: 5px;
+        border: 0px;
+        border-radius:3px;
+        font-size:medium;
+        background-color: rgb(206, 18, 80);
+        font-family:Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<body>
+    <div class=heading>
+        <a href="index.html">
+        <p>Hospital Management System</p>
+        </a>
+    </div>
+    <div class=navbar>
+        <button onclick="" class="consult">
+            <a href="slot.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                <p class="text">BOOK</p>
+                <p class="text">SLOT</p>
+            </a>
+        </button>
+        <button onclick="" class="consult">
+            <a href="onlineconsult.html">
+                <i class="fa-solid fa-user-doctor"></i>
+                <p class="text">CONSULT ONLINE</p>
+            </a>
+        </button>
+        <button onclick="" class="consult">
+            <a href="shop.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <p class="text">&nbsp;&nbsp;BUY MEDICINE</p>
+            </a>
+        </button>
+        <button onclick="" class="consult">
+            <a href="labtest.html">
+                <i class="fa-solid fa-flask"></i>
+                <p class="text">BOOK LAB TEST</p>
+            </a>
+        </button>
+    </div>
+
+    <div class="labtest">
+        <div class="middle">
+        <form action="">
+            <input class="formitems" type="text" name="name" placeholder="Name*"><br>
+            <input class="formitems" type="email" name="mail" placeholder="Email*"><br>
+            <input class="formitems" type="number" name="phno" placeholder="Phone Number*"><br>
+            <input class="formitemssmall"type="text" name="test type" placeholder="Test Name">
+            <input class="formitemssmall"type="date" name="date" placeholder="Slot Booking Date"><br>
+            <select class="formitems" name="state" id="">
+                <option value="AP">Andhra Pradesh</option>
+                <option value="TEL">Telangana</option>
+            </select><br>
+            <select class="formitems" name="city" id="">
+                <option value="hyd">Hyderabad</option>
+            </select>
+            <input type="submit" class="submit" value="submit">
+        </form>
+        <p>*All fields are mandatory.</p>
+        <p>Home sample collection charges will be applicable</p>
+        </div>
+    </div>
+</body>
+</html>

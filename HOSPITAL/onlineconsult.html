@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <script src="https://kit.fontawesome.com/fd784ce3e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="superstyle.css">
+</head>
+
+<style>
+    .head{
+        margin-top:9px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(47, 152, 201);
+        font-weight: 550;
+    }
+    .citysearch{
+        border-style: hidden;
+        outline: none;
+        width: 500px;
+        color: rgb(0, 0, 0);
+    }
+    .citysearch::placeholder{
+        color: rgb(114, 121, 119);
+        margin-bottom: 5px;
+    }
+    form{
+        margin-left: 15px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid rgb(62, 250, 209);
+    }
+    img{
+        width:15px;
+    }
+
+    .cities{
+        border: 1px solid rgb(133, 129, 129);
+        border-radius: 7px;
+        color: rgb(44, 224, 185);
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 13px;
+        padding: 5px 15px;
+        width: fit-content;
+    }
+
+</style>
+<body>
+    <div class=heading>
+        <a href="index.html">
+        <p>Hospital Management System</p>
+        </a>
+    </div>
+
+    <div class=navbar>
+        <button onclick="" class="consult">
+            <a href="slot.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                <p class="text">BOOK</p>
+                <p class="text">SLOT</p>
+            </a>
+        </button>
+        <button onclick="" class="consult">
+            <a href="onlineconsult.html">
+                <i class="fa-solid fa-user-doctor"></i>
+                <p class="text">CONSULT ONLINE</p>
+            </a>
+        </button>
+        <button onclick="" class="consult">
+            <a href="shop.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <p class="text">&nbsp;&nbsp;BUY MEDICINE</p>
+            </a>
+        </button>
+        <button onclick="" class="consult">
+            <a href="labtest.html">
+                <i class="fa-solid fa-flask"></i>
+                <p class="text">BOOK LAB TEST</p>
+
+            </a>
+        </button>
+    </div>
+    
+    <div class="category">
+        <p class="head">Online Doctor Consultation</p>
+        <form action="">
+            <img src="imgs\icons8-search-100.png" alt="">
+            <input type="text" name="city" class="citysearch" placeholder="Search doctors or specialities">
+        </form>
+        <p class="head">Popular cities</p>
+        <span class="cities">New Delhi</span>
+        <span class="cities">Hyderabad</span>
+        <span class="cities">Chennai</span>
+        <span class="cities">Kolkata</span>
+        <span class="cities">Mumbai</span>
+        <span class="cities">Banglore</span>
+    </div>
+</body>
+</html>
